@@ -1,0 +1,97 @@
+.main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+.header{
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    color: var(--accent);
+    font-size: 1.2rem;
+}
+.date{
+    padding: 0.5rem 0;
+}
+.backButton{
+    background-color: transparent;
+    color: var(--accent);
+    font-size: 1.2rem;
+    border: none;
+    padding: 0.5rem;
+    position: absolute;
+    left: 0;
+    cursor: pointer;
+}
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ridesList{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 2rem;
+}
+.noDataFound{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--background);
+    padding-top: 2rem;
+}
+.loading{
+    animation: fadeIn 0.7s ease-in-out infinite alternate;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0.3;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    .main{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .ridesList{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: normal;
+    }
+    .noDataFound{
+        left: 0;
+        top: 0;
+        position: absolute;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .main{
+        width: 85%;
+    }
+}
+
+/* Styles for screens 1200px and larger */
+@media screen and (min-width: 1200px) {
+    .main{
+        width: 80%;
+    }
+}
+
+/* Styles for screens 1500px and larger */
+@media screen and (min-width: 1500px) {
+}

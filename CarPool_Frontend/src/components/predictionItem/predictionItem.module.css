@@ -1,0 +1,20 @@
+.predictionItem{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+    border-bottom: 1px solid var(--background);
+    color: var(--darker);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+.predictionItem:hover{
+    background-color: var(--light);
+}
+.placeName{
+    font-size: 1rem;
+}
+.placeDescription{
+    font-size: 0.8rem;
+    color: var(--accent);
+}

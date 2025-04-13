@@ -1,0 +1,113 @@
+.main{
+    height: 100%;
+    width: 100%;
+}
+.pageHead{
+    width: 100%;
+    padding: 2rem 0rem 0rem 1.5rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--accent);
+}
+.form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 1rem;
+}
+.formItem{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.formInput{
+    padding: 0.7rem;
+    background-color: var(--light);
+    color: var(--accent);
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 0.5rem;
+}
+.formLabel{
+    font-size: 1rem;
+    padding: 0.5rem;
+    color: var(--accent);
+}
+.buttonContainer{
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--accent);
+}
+.button{
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: var(--light);
+    color: var(--accent);
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 2px 2px 6px 1px var(--background);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+.button:hover{
+    box-shadow: 2px 2px 4px 1px var(--background-dark);
+}
+.submitButton{
+    background-color: var(--accent);
+    color: var(--light);
+}
+.switchMessage{
+    color: var(--accent);
+}
+.switchMessage a{
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--accent);
+}
+
+@media screen and (min-width: 600px) {
+    .main{
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+@media screen and (min-width: 750px) {
+    .main{
+        width: 65%;
+    }
+    .buttonContainer{
+        flex-direction: row;
+        gap: 1rem;
+    }
+    .button{
+        flex-grow: 1;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .main{
+        width: 50%;
+    }
+}
+
+/* Styles for screens 1200px and larger */
+@media screen and (min-width: 1200px) {
+    .main{
+        width: 40%;
+    }
+}
+
+/* Styles for screens 1500px and larger */
+@media screen and (min-width: 1500px) {
+    .main{
+        width: 35%;
+    }
+}

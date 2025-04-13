@@ -1,0 +1,126 @@
+.main{
+    width: 100%;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color: var(--accent);
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--accent);
+    font-size: 1.2rem;
+}
+.backButton{
+    background-color: transparent;
+    color: var(--accent);
+    font-size: 1.2rem;
+    border: none;
+    padding: 0.5rem;
+    position: absolute;
+    left: 0;
+    cursor: pointer;
+}
+.contactForm{
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.contactContainer{
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid var(--background);
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.formItem{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    border-bottom: 1px solid var(--background);
+}
+.formInput{
+    flex-grow: 1;
+    padding: 5px;
+    border: none;
+    outline: none;
+}
+.buttonContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-bottom: 2rem;
+}
+.button{
+    padding: 1rem;
+    background-color: var(--accent);
+    color: var(--light);
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 2px 2px 6px 1px var(--background);
+    transition: all 0.2s ease-in-out;
+}
+.button:hover{
+    box-shadow: 2px 2px 4px 1px var(--background-dark);
+}
+.addButton{
+    background-color: var(--light);
+    color: var(--accent);
+}
+
+
+@media screen and (min-width: 750px) {
+    .main{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .contactForm{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .contactContainer{
+        width: 45%;
+    }
+    .buttonContainer{
+        width: 75%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .button{
+        flex-grow: 1;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .main{
+        width: 85%;
+    }
+    .buttonContainer{
+        width: 70%;
+    }
+}
+
+/* Styles for screens 1200px and larger */
+@media screen and (min-width: 1200px) {
+    .main{
+        width: 75%;
+    }
+    .buttonContainer{
+        width: 55%;
+    }
+}
+
+/* Styles for screens 1500px and larger */
+@media screen and (min-width: 1500px) {
+}

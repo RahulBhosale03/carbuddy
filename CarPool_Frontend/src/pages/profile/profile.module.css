@@ -1,0 +1,148 @@
+.main{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+    font-size: 1rem;
+    color: var(--accent);
+}
+.pageHeader{
+    font-size: 1.5rem;
+    text-align: center;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.infoContainer{
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    padding: 0.5rem;
+    border-bottom: 1px solid var(--background);
+}
+.infoContainer i, .contactHeader i{
+    font-size: 1.5rem;
+}
+.infoItem{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    flex-grow: 1;
+}
+.infoKey{
+    font-weight: 600;
+}
+.infoValue{
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+.contactDetails{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--background);
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+.contactHeader{
+    display: flex;
+    gap: 0.5rem;
+    padding: 0.5rem;
+}
+.contactContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.contact{
+    width: 100%;
+    background-color: var(--light);
+    color: var(--accent);
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    gap: 0.5rem;
+    border-radius: 0.5rem;
+}
+.profileActions{
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: flex-end;
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+}
+.button{
+    padding: 1rem;
+    background-color: var(--accent);
+    color: var(--light);
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 2px 2px 6px 1px var(--background);
+    transition: all 0.2s ease-in-out;
+}
+.button:hover{
+    box-shadow: 2px 2px 4px 1px var(--background-dark);
+}
+.updateButton{
+    background-color: var(--light);
+    color: var(--accent);
+}
+.cancelButton{
+    background-color: var(--danger);
+    color: white;
+}
+
+@media screen and (min-width: 750px) {
+    .main{
+        width: 90%;
+        margin: 0 auto;
+        gap: 1rem;
+    }
+    .info, .profileActions{
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        align-items: flex-start;
+    }
+    .profileActions{
+        margin: 0 auto;
+        width: 75%;
+    }
+    .button{
+        flex-grow: 1;
+    }
+    .contactContainer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .main{
+        width: 85%;
+    }
+    .profileActions{
+        width: 70%;
+    }
+}
+
+/* Styles for screens 1200px and larger */
+@media screen and (min-width: 1200px) {
+    .main{
+        width: 75%;
+    }
+    .profileActions{
+        width: 55%;
+    }
+}
+
+/* Styles for screens 1500px and larger */
+@media screen and (min-width: 1500px) {
+}
